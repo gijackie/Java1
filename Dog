@@ -1,0 +1,51 @@
+public class Dog{
+	public String name;
+	public String color1;
+	public String breed;
+	public boolean hungry = false;
+	
+	
+	public static void main(String[] args) {
+	
+	Dog Ralph = new Dog("Ralph", "brown spots", "mut");
+	System.out.println("The new dog is " + Ralph.name + ".  " + Ralph.name + "'s color is " + Ralph.color1 + ".  His breed is " + Ralph.breed +".");
+	}
+	
+	public Dog(String dogname, String dogcolor, String dogbreed){
+	this.name = dogname;
+	this.color1 = dogcolor;
+	this.breed = dogbreed;
+	}
+	
+	
+public String getName() {
+return name;
+}
+public void setName(String name) {
+this.name = name;
+}
+
+public String getColor1(){
+return color1;
+}
+
+public void setColor1(String color1) {
+this.color1 = color1;
+}
+
+public String getBreed() {
+return breed;
+}
+
+public void setBreed(String breed) {
+this.breed = breed;
+}
+
+public boolean getHungry() {
+return hungry;
+}
+
+public void setHungry(boolean hungry) {
+this.hungry = hungry;
+}
+}
