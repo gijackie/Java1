@@ -1,0 +1,60 @@
+public class Employee {
+private String firstName;
+private String lastName;
+private double salary;
+
+public Employee (String firstName, String lastName){
+this.firstName = firstName;
+this.lastName = lastName;
+}
+public Employee (String firstName, String lastName, double salary){
+this.firstName = firstName;
+this.lastName = lastName;
+if(salary > 0){
+this.salary = salary;}
+else
+{this.salary = 0;}
+}
+public static void main(String[] args) {
+
+Employee Monica = new Employee("Monica", "Chatham", 75000);
+System.out.println(Monica.firstName + " " + Monica.lastName + "  Salary: $" + Monica.salary);
+
+Employee Bridget = new Employee("Bridget", "Bluitt", 63000);
+System.out.println(Bridget.firstName + " " + Bridget.lastName + "  Salary: $" + Bridget.salary);
+
+Monica.salary = Monica.salary * 1.1;
+System.out.println(Monica.firstName + " " + Monica.lastName + "  New Salary: $" + Monica.salary);
+
+Bridget.salary = Bridget.salary * 1.1;
+System.out.println(Bridget.firstName + " " + Bridget.lastName + "  New Salary: $" + Bridget.salary);
+
+}
+
+public String getFirstName() {
+return firstName;
+}
+public void setFirstName(String firstName) {
+this.firstName = firstName;
+}
+public String getLastName() {
+return lastName;
+}
+public void setLastName(String lastName) {
+this.lastName = lastName;
+}
+public Double getSalary() {
+return salary;
+}
+public void setSalary(Double salary) {
+if(salary > 0){
+this.salary = salary;}
+else
+{
+this.salary = 0;
+System.out.println("The salary must be greater than 0.  Please, try again.");
+}
+}
+
+
+}
