@@ -9,13 +9,36 @@ public class Dog{
 	
 	Dog Ralph = new Dog("Ralph", "brown spots", "mut");
 	System.out.println("The new dog is " + Ralph.name + ".  " + Ralph.name + "'s color is " + Ralph.color1 + ".  His breed is " + Ralph.breed +".");
+	Ralph.hungry = true;
+	String retval = null;
+	if(Ralph.hungry) {
+		retval = "This dog is hungry.  Please, feed him.";
+	}
+	else
+	{
+		retval = "This dog is not hungry.  Take him for a walk.";
 	}
 	
-	public Dog(String dogname, String dogcolor, String dogbreed){
+	System.out.println(retval);
+	}
+	
+ 	public Dog(String dogname, String dogcolor, String dogbreed){
 	this.name = dogname;
 	this.color1 = dogcolor;
 	this.breed = dogbreed;
 	}
+	
+	/*public String hungryState (boolean hungry1) {
+	String retval = null;
+	if(hungry1) {
+		retval = "This dog is hungry.  Please, feed him.";
+	}
+	else
+	{
+		retval = "This dog is not hungry.  Take him for a walk.";
+	}
+	return retval;
+	} */
 	
 	
 public String getName() {
