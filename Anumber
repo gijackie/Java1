@@ -1,0 +1,21 @@
+public class Anumber {
+
+public static void main(String[] args) {
+	Integer aNumber = 3;
+	if(aNumber >= 0){
+		if(aNumber == 0) {
+		System.out.println("first string");
+	}
+	else
+	{
+		System.out.println("second string");
+		
+	}
+	System.out.println("third string");
+}
+}
+}
+//Yes, it happened exactly like I thought it would.  HOwever, 
+//why doesn't the code in the book show any braces?  You can't 
+//tell that the last SOP is by itself, or within the "else" 
+//braces.  It's confusing
