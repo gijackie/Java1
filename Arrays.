@@ -1,0 +1,47 @@
+
+public class Arrays {
+	
+	public static void main(String[] args) {
+		String[] names = new String [4];
+		names[0]="Jacqueline";
+		names[1]="Denise";
+		names[2]="Mark";
+		names[3]="Curly";
+		String WholeName = null;
+		
+		for(int i = 0; i < names.length; i++) {
+			
+			if(WholeName == null){
+				WholeName = " "+ names[i];
+			}
+			else
+			{
+			WholeName = WholeName + " " + names[i];} 
+			//System.out.println(names[i]);
+			System.out.println(WholeName);
+		
+		}
+		int value1 = 1;
+		int value2 = 2;
+		int result;
+		boolean someCondition = true;
+		result = someCondition ? value1 : value2;
+		
+		System.out.println("The value is : " + result);
+		int i = 3;
+		i++;
+		//prints 4
+		System.out.println(i);
+		++i;
+		//prints 5
+		System.out.println(i);
+		//prints 6
+		System.out.println(++i);
+		//prints 6
+		System.out.println(i++);
+		//prints 7
+		System.out.println(i); //I don't understand this result
+		
+	}
+
+}
