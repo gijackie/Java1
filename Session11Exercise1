@@ -1,0 +1,26 @@
+public class Homework11_1 {
+public String name;
+public float wrongnumber;
+
+
+
+public static void main (String[] args){
+	Homework11_1 assignment = new Homework11_1();
+	assignment.name = "Chapter11homework";
+	System.out.println("The string is "+ assignment.name);
+	assignment.setName ("Whatever");
+	System.out.println("This.getName is " + assignment.getName());
+	assignment.wrongnumber = 5126;
+	System.out.println("The integer is " + assignment.wrongnumber);
+	String blank;
+	//System.out.println("The blank value is " + blank);
+}
+
+public String getName() {
+return name;
+}
+public void setName(String name) {
+this.name = name;
+}
+
+}
