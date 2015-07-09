@@ -1,0 +1,13 @@
+//2.In the following program, explain why the value "6" is printed twice in a row:
+ class PrePostDemo {
+    public static void main(String[] args){
+        int i = 3;
+        i++;
+        System.out.println(i);    // "4"
+        ++i;                     
+        System.out.println(i);    // "5"
+        System.out.println(++i);  // "6"//i = 5, and here we add 1 to 5 because the ++ is before the i, making i 6
+        System.out.println(i++);  // "6"//and here we come in with i = 6, and since the ++ is after the i, i still equals 6 and on the next one...
+        System.out.println(i);    // "7"//the 1 is added to i from the previous post increment.
+    }
+}
