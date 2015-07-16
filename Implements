@@ -1,0 +1,39 @@
+
+public class Siamese extends Cat implements CatBehavior{
+	
+	
+	public void scratch(){
+		System.out.println("This cat can scratch!");
+	}
+	public void climb(int height){
+		System.out.println("This cat can climb " + height + " feet high.");
+	}
+	public boolean eat(String food){
+		boolean maybe = false;
+		if(food != null){
+		maybe = true;
+		}
+		return maybe;
+	}
+	public static void main (String[] args){
+				
+		Siamese siamese1 = new Siamese();
+		siamese1.hunt();
+		siamese1.hunt("Fat");
+		
+	}
+	
+/* 	public  Siamese(){
+		super();
+		
+	} */
+	
+	public void hunt(){
+		System.out.println("Siamese Hunting!!");
+	}
+	
+	public void hunt(String name){
+		System.out.println("We're hunting " + name + " Siamese cats!!");
+	}
+	
+}
