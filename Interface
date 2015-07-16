@@ -1,0 +1,7 @@
+
+public interface CatBehavior {
+public void scratch();
+public void climb(int height);
+public boolean eat(String food);
+
+}
